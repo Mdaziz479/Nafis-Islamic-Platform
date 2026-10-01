@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@quranjs/api": "^3.10.0",
+    "@vercel/analytics": "^2.0.1",
     "bcryptjs": "^3.0.3",
     "jose": "^6.2.12",
     "mongoose": "^9.10.2",

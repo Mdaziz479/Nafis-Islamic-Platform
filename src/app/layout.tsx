@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { AuthProvider } from "@/components/auth/AuthContext";
 import { GuestSyncNotice } from "@/components/auth/GuestSyncNotice";
 import { Footer } from "@/components/layout/Footer";
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Footer />
           </AuthProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
